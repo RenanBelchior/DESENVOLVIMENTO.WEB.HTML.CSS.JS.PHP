@@ -1,0 +1,179 @@
+Lista de Exercícios – CSS
+
+1 - (PRÁTICO) Escreva um seletor CSS para estilizar todos os elementos <p> com a cor de texto vermelha.
+p {
+    color: red;
+}
+
+2 - (PRÁTICO) Escreva um seletor CSS para aplicar um estilo de borda sólida preta aos elementos <span> que estão diretamente dentro de um elemento <div> (mas não aos <span> que estão dentro de outros elementos contidos no <div>).
+div > span {
+    border: 1px solid black;
+}
+
+3 - (PRÁTICO) Crie um seletor de classe CSS chamado .menu que defina a cor do texto para azul.
+.menu {
+    color: blue;
+}
+
+4 - (PRÁTICO) Escreva dois seletores de classe, .header e .footer. O .header deve ter uma cor de fundo cinza, enquanto o .footer deve ter uma cor de fundo preta e texto branco.
+.header {
+    background-color: gray;
+}
+
+.footer {
+    background-color: black;
+    color: white;
+}
+
+5 - (PRÁTICO) Crie um seletor para uma classe .main-content, que tenha um seletor filho .sidebar. O .main-content deve ter uma largura de 80%, enquanto o .sidebar dentro dele deve ter uma largura de 20% e um fundo cinza claro.
+.main-content {
+    width: 80%;
+}
+
+.main-content .sidebar {
+    width: 20%;
+    background-color: lightgray;
+}
+
+
+6 - (PRÁTICO) Dado um elemento com id="main-title", escreva um seletor CSS para definir a cor do texto desse elemento como azul.
+#main-title {
+    color: blue;
+}
+
+
+7 - (PRÁTICO) Se você tem um parágrafo <p> com id="special-paragraph", como você aplicaria a fonte "Arial" a este elemento usando CSS?
+#special-paragraph {
+    font-family: Arial, sans-serif;
+}
+
+
+8 - (PRÁTICO) Como você adicionaria uma margem de 20px e um padding de 10px a um elemento <div> com id="container"?
+#container {
+    margin: 20px;
+    padding: 10px;
+}
+
+
+9 - (PRÁTICO) Dado uma lista não ordenada <ul> com id="main-list", escreva um seletor CSS para definir a cor dos itens da lista para verde.
+#main-list li {
+    color: green;
+}
+
+10 - (PRÁTICO) Como você aplicaria um fundo amarelo a todos os campos de entrada de e-mail (<input>) usando CSS?
+input[type="email"] {
+    background-color: yellow;
+}
+
+
+11 - (PRÁTICO) Escreva um seletor CSS para mudar a cor da fonte para azul em todos os elementos <span> que estão dentro de qualquer elemento <section>, independentemente da profundidade.
+section span {
+    color: blue;
+}
+
+
+12 - (PRÁTICO) Como você estilizaria todos os elementos <li> dentro de listas não ordenadas (<ul>) que estão dentro de um elemento com class="nested-list"?
+.nested-list ul li {
+    /* Estilos desejados */
+}
+
+
+13 - (PRÁTICO) Dado um <div> com class="container", como você aplicaria um estilo de borda a todos os elementos <p> e <span> que são descendentes deste <div>?
+.container p, .container span {
+    border: 1px solid black;
+}
+
+
+14 - (PRÁTICO) Como você faria para que todos os elementos <a> dentro de um <footer> tenham a cor de texto verde, apenas quando estiverem dentro de um elemento com id="main-footer"?
+#main-footer footer a {
+    color: green;
+}
+
+
+15 – (TEÓRICO) Se duas regras CSS são aplicadas ao mesmo elemento <p>: uma no arquivo CSS externo (cor azul) e outra no estilo inline (cor vermelha), qual cor o parágrafo terá?
+R: O estilo inline (cor vermelha) terá prioridade sobre o estilo externo (cor azul), portanto, o parágrafo será vermelho.
+
+16 – (TEÓRICO) Se um elemento tem id="unique-element" e class="common-element", e existem duas regras CSS, uma usando o seletor de ID e outra usando o seletor de classe, qual cor será aplicada?
+R: A regra CSS usando o seletor de ID terá prioridade sobre a regra usando o seletor de classe. Portanto, a cor definida pela regra de ID será aplicada.
+
+17 - (TEÓRICO) Um estilo de fonte aplicado a um elemento <div> pai afetará os elementos filhos dentro dele?
+R: Sim, um estilo de fonte aplicado a um elemento <div> pai afetará os elementos filhos dentro dele, a menos que sejam substituídos por estilos específicos aplicados diretamente aos elementos filhos.
+
+18 - (TEÓRICO) Como a posição de um elemento no DOM pode afetar a aplicação de estilos CSS?
+R: A posição de um elemento no Document Object Model (DOM) pode afetar a aplicação de estilos CSS de várias maneiras:
+
+A hierarquia do DOM influencia a cascata de estilos, onde estilos definidos em elementos pais podem afetar seus elementos filhos.
+Seletor CSS como > (seletor de filho direto) e ~ (seletor de irmão seguinte) são sensíveis à posição do elemento no DOM e podem ser usados para aplicar estilos com base nessa relação.
+A ordem em que as regras CSS são declaradas também pode afetar qual estilo é aplicado, especialmente quando há conflitos.
+
+19 - (TEÓRICO) Como !important em CSS afeta a cascata e a especificidade dos estilos?
+R: O uso de !important em uma regra CSS faz com que essa regra tenha prioridade sobre outras regras de estilo, ignorando a cascata e a especificidade. Isso significa que mesmo que outras
+regras possuam uma especificidade maior ou estejam em um ponto posterior na cascata, a regra com !important será aplicada. É geralmente recomendado evitar o uso excessivo de !important, pois 
+pode tornar o código CSS mais difícil de entender e manter.
+
+20 - (PRÁTICO) Como você define a cor do texto de um parágrafo para vermelho usando a notação RGB no CSS?
+p {
+    color: rgb(255, 0, 0);
+}
+
+
+21 - (PRÁTICO) Escreva um seletor CSS que defina a cor de fundo de um <div> para azul com 50% de transparência usando RGBA.
+div {
+    background-color: rgba(0, 0, 255, 0.5);
+}
+
+
+22 - (PRÁTICO) Se você deseja criar uma cor laranja claro usando RGB, quais valores você usaria?
+rgb(255, 165, 0)
+
+
+23 - (PRÁTICO) Como você definiria a cor do texto de um parágrafo para um vermelho vivo usando HSL no CSS?
+p {
+    color: hsl(0, 100%, 50%);
+}
+
+
+24 - (PRÁTICO) Escreva um seletor CSS que defina a cor de fundo de um <div> para um azul com baixa saturação usando HSL.
+div {
+    background-color: hsl(240, 100%, 70%);
+}
+
+
+25 - (PRÁTICO) Como você aplicaria uma cor de texto verde escuro (usando HSL) a um elemento <a>?
+a {
+    color: hsl(120, 100%, 25%);
+}
+
+
+26 - (PRÁTICO) Como você definiria a cor de um texto para um tom médio de cinza, sem usar as palavras "gray", "black" ou "white", apenas usando HSL?
+p {
+    color: hsl(0, 0%, 50%);
+}
+
+
+27 - (PRÁTICO) Como você arredondaria todos os cantos de uma <div> para ter um raio de borda de 10px?
+div {
+    border-radius: 10px;
+}
+
+
+28 - (PRÁTICO) Dado um elemento <button>, como você faria para que o canto superior esquerdo tivesse um raio de borda de 20px e o canto inferior direito um raio de borda de 5px?
+button {
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 5px;
+}
+
+
+29 - (PRÁTICO) Como você transformaria um elemento <div> em uma forma elíptica usando border-radius?
+div {
+    border-radius: 50%;
+}
+
+
+30 - (PRÁTICO) Se você tem uma <div> com largura e altura iguais (por exemplo, 100px), como você usaria border-radius para transformá-la em um círculo perfeito
+div {
+    width: 100px; /* Exemplo de largura */
+    height: 100px; /* Exemplo de altura */
+    border-radius: 50%; /* Transforma em um círculo perfeito */
+}
+
