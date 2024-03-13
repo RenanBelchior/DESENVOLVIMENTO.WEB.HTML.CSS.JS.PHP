@@ -1,0 +1,79 @@
+Lista de Exercícios – Estruturas HTML – GABARITO
+
+1 - Qual é a função principal do doctype em um documento HTML? Quais problemas podem ocorrer se o doctype estiver ausente?
+
+R: O doctype define o tipo de documento e a versão do HTML utilizada. Ele garante que o navegador renderize a página da web corretamente, seguindo os padrões e especificações da linguagem. Se o doctype estiver ausente, os navegadores podem entrar no modo de "modo de compatibilidade", onde tentam interpretar a página de maneira ambígua, resultando em possíveis inconsistências na renderização e no comportamento da página.
+
+2 - Liste três tipos de doctype utilizados em documentos HTML. Descreva brevemente cada um deles e indique em qual versão do HTML eles são mais comumente aplicados.
+
+R:
+
+<!DOCTYPE html>: Este doctype é usado em documentos HTML5. Ele instrui o navegador a interpretar o documento como HTML5.
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">: Este é um doctype para documentos XHTML 1.0 Transitional. Ele define um conjunto de regras para criar páginas web compatíveis com XHTML 1.0.
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">: Este doctype é usado em documentos HTML 4.01 Transitional. Ele especifica regras para criar páginas web compatíveis com HTML 4.01.
+
+3 - Por que é recomendado usar <!DOCTYPE html> em documentos HTML5 em vez de doctypes mais antigos, como os do HTML 4.01 ou XHTML 1.0?
+
+R: <!DOCTYPE html> é recomendado para documentos HTML5 porque é mais simples e fácil de lembrar. Além disso, HTML5 é uma especificação mais recente que oferece recursos mais avançados e uma sintaxe mais flexível. Usar um doctype mais antigo pode restringir o uso desses recursos e pode não ser tão compatível com as tecnologias web modernas.
+
+4 - Explique a diferença entre doctype e meta tag charset em um documento HTML. Por que ambos são importantes?
+
+R: O doctype especifica a versão do HTML utilizada no documento e ajuda o navegador a renderizá-lo corretamente. Por outro lado, a meta tag charset especifica o conjunto de caracteres (como UTF-8) usado no documento. Ambos são importantes porque garantem que o navegador interprete e exiba o conteúdo da página da web corretamente, evitando problemas de codificação e renderização.
+
+5 - Crie uma página HTML e adicione uma meta tag que especifique o idioma da página como inglês.
+
+R:
+
+6 - Crie uma página HTML e inclua uma meta tag que configure a viewport para dispositivos móveis.
+
+R:
+
+7 - Crie uma página HTML e adicione uma meta tag que contenha palavras-chave relevantes para a página.
+
+8 - Crie uma página HTML e inclua uma meta tag que impeça o navegador de armazenar em cache o conteúdo da página.
+
+R:
+
+9 - Crie uma página HTML e adicione uma meta tag que especifique o autor da página e os direitos autorais.
+
+R:
+
+10 - Crie uma estrutura básica de layout de página HTML que inclua as seguintes seções (Utilização de <header>, <nav>, <main> e <footer>):
+
+· Um cabeçalho contendo o título da página dentro de uma tag <header>.
+
+· Uma barra de navegação dentro de uma tag <nav>, contendo links para diferentes seções da página.
+
+· O conteúdo principal da página dentro de uma tag <main>.
+
+· Um rodapé contendo informações de contato ou direitos autorais dentro de uma tag <footer>.
+
+R:
+
+11 - Crie uma página HTML que represente um blog com múltiplos artigos, cada um com um título, conteúdo e uma seção de comentários em uma barra lateral. (Uso de <section>, <article> e <aside>.)
+
+R:
+
+12 - Crie uma página HTML que represente um artigo sobre um assunto de sua escolha. Utilize tags de cabeçalho (<h1>, <h2>, <h3>) para organizar o título principal, subtítulos e subseções do artigo. Use a tag <p> para inserir parágrafos de texto dentro de cada seção.
+
+R:
+
+13 - Crie uma página HTML com um parágrafo de texto que contenha algumas palavras ou frases que devem ser enfatizadas. Utilize a tag <strong> para destacar palavras ou frases importantes e <em> para enfatizar partes do texto.
+
+R:
+
+14 - Crie uma página HTML que contenha três listas: uma lista não ordenada, uma lista ordenada e uma lista de definição. Insira itens nessas listas para representar diferentes categorias ou conceitos.
+
+R:
+
+15 - Crie uma página HTML que inclua uma citação inspiradora usando a tag <blockquote>. Inclua também o autor da citação usando a tag <cite>.
+
+R:
+
+16 - Crie uma página HTML que contenha uma abreviatura com uma explicação quando o cursor é colocado sobre ela. Além disso, inclua uma fórmula química com um subscrito para representar um índice.
+
+R:
+
+17 - Crie uma página HTML que represente o layout básico de um site. Utilize as tags semânticas <header>, <nav>, <main> e <footer> para estruturar o conteúdo da página.
